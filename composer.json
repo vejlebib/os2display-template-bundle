@@ -1,0 +1,11 @@
+{
+    "name": "vejlebib/os2display-template-bundle",
+    "description": "Vejlebib os2display template bundle",
+    "type": "symfony-bundle",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vejlebib\\Os2DisplayTemplateBundle\\": ""
+        }
+    }
+}

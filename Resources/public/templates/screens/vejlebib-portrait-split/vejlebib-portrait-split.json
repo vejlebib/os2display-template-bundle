@@ -1,0 +1,12 @@
+{
+  "id": "vejlebib-portrait-split",
+  "type": "screen",
+  "name": "Vejlebib potrait split",
+  "icon": "vejlebib-portrait-split.png",
+  "paths": {
+    "live": "vejlebib-portrait-split-live.html",
+    "edit": "vejlebib-portrait-split-edit.html",
+    "css": "vejlebib-portrait-split.css"
+  },
+  "orientation": "portrait"
+}
