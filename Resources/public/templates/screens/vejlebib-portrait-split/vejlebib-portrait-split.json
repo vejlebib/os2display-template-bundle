@@ -1,7 +1,7 @@
 {
   "id": "vejlebib-portrait-split",
   "type": "screen",
-  "name": "Vejlebib potrait split",
+  "name": "Fuld skærm split (vejlebib)",
   "icon": "vejlebib-portrait-split.png",
   "paths": {
     "live": "vejlebib-portrait-split-live.html",
