@@ -1,0 +1,56 @@
+{
+  "id": "vejlebib-calendar-list",
+  "type": "slide",
+  "name": "Vejlebib calender list",
+  "icon": "vejlebib-calendar-list.png",
+  "paths": {
+    "live": "vejlebib-calendar-list.html",
+    "edit": "vejlebib-calendar-list-edit.html",
+    "preview": "vejlebib-calendar-list.html",
+    "css": "vejlebib-calendar-list.css",
+    "js": "bundles/vejlebibos2displaytemplate/templates/js/vejlebibCalendarList.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "calendar",
+  "media_type": "image",
+  "script_id": "vejlebib-calendar-list",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": "50",
+    "bgcolor": "#ccc",
+    "textcolor": "#fff",
+    "textbgcolor": "rgba(0, 0, 0, 0.7)",
+    "headline": "",
+    "text": "",
+    "displayitems": "10",
+    "eventitems": [],
+    "logopos": {
+      "top":"0",
+      "bottom":"auto",
+      "left":"0",
+      "right":"auto"
+    },
+    "logosize": "10%"
+  },
+  "tools": [
+    {
+      "name": "Baggrund",
+      "id": "background-editor"
+    },
+    {
+      "name": "Logo",
+      "id": "logo-editor"
+    },
+    {
+      "name": "Exchange kalender",
+      "id": "vejlebib-exchange-tool"
+    },
+    {
+      "name": "Manuel kalender",
+      "id": "manual-calendar-editor"
+    }
+  ]
+}

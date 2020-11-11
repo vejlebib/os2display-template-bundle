@@ -1,0 +1,60 @@
+<div class="edit-menu--background" role="banner">
+  <div class="edit-menu--background-inner">
+    <div class="edit-menu--toggle-icon" data-ng-click="close()">
+      <div class="svg-clickable">
+        <object data="bundles/os2displayadmin/images/svg/cancel.svg"
+                type="image/svg+xml">
+          <!-- Fallback (ie8)-->
+          <img src="bundles/os2displayadmin/images/cancel.png"/>
+        </object>
+      </div>
+    </div>
+    <div class="edit-menu--background-page">
+      <div class="edit-menu--background-page-inner">
+        <div class="vejlebib-exchange--content">
+          <h2 class="edit-menu--background-header">Indstil Exchange kalender</h2>
+
+          <div class="vejlebib-exchange--tool-section">
+            <h2 class="vejlebib-exchange--tool-headline">Vælg hvilke konti der skal hentes kalenderbegivenheder fra</h2>
+            <form name="emailForm" ng-submit="addEmail()">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" ng-model="email">
+              <label for="location">Overskriv sted</label>
+              <input id="location" type="text" ng-model="location">
+              <input type="submit" class="vejlebib-exchange--button" value="+ Tilføj email">
+            </form>
+          </div>
+
+          <div class="vejlebib-exchange--tool-section">
+            <h2 class="vejlebib-exchange--tool-headline">Valgte emails</h2>
+
+            <div
+                data-ng-repeat="resource in slide.options.resources track by $index"
+                class="vejlebib-exchange--resource-list-element">
+              {{resource.mail}}
+              <span data-ng-if="resource.location"> ({{resource.location}}) </span>
+              <span>
+              <div class="vejlebib-exchange--button-remove is-small"
+                   data-ng-click="removeEmail($index)">Fjern
+              </div>
+            </span>
+            </div>
+          </div>
+
+          <div class="vejlebib-exchange--tool-section">
+            <h2 class="vejlebib-exchange--tool-headline">Tilføj et filter for at begrænse hvilke begivenheder der vises</h2>
+            <label for="location">Filterstreng</label>
+            <input id="filter" type="text" data-ng-model="slide.options.eventFilter.filter">
+            <input id="exclude" type="checkbox" data-ng-model="slide.options.eventFilter.exclude">
+            <label for="exclude" style="display: inline;">Ekskluder</label>
+            <br>
+            <h2 class="vejlebib-exchange--tool-headline" data-ng-if="slide.options.eventFilter.filter">
+              Filtrerer på: <strong>{{ slide.options.eventFilter.filter }}</strong> <span data-ng-if="slide.options.eventFilter.exclude">(ekskludering)</span>
+            </h2>
+            <h2 class="vejlebib-exchange--tool-headline" data-ng-if="!slide.options.eventFilter.filter">Ingen filtrering</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

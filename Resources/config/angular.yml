@@ -1,0 +1,12 @@
+assets:
+  css:
+    - bundles/vejlebibos2displaytemplate/apps/toolsModule/vejlebib-exchange-tool.css
+  js_prod:
+    - bundles/vejlebibos2displaytemplate/apps/toolsModule/vejlebib-exchange-tool.js
+
+modules:
+  toolsModule:
+    files:
+      - bundles/vejlebibos2displaytemplate/apps/toolsModule/vejlebib-exchange-tool.js
+
+apps:
