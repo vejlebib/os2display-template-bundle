@@ -3,7 +3,7 @@
     <h1 class="vejlebib-calendar-list--header">{{ikSlide.options.headline}}</h1>
     <table class="vejlebib-calendar-list--events" data-ng-style="{'color': ikSlide.options.textcolor}">
       <tr class="vejlebib-calendar-list--event"
-          data-ng-repeat="event in ikSlide.futureEvents | orderBy: 'from' | limitTo : ikSlide.options.displayitems"
+          data-ng-repeat="event in ikSlide.futureEvents | activeEvents | orderBy: 'from' | limitTo : ikSlide.options.displayitems"
           data-ng-style="{'border-color': ikSlide.options.textcolor}">
         <td class="vejlebib-calendar-list--title">
           {{event.event_name}}
